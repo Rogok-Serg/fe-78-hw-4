@@ -27,7 +27,7 @@ img {
 /* <<<<< /Скидання >>>>> */
 
 :root {
-    --accent-color: orangered;
+    --accent-color: #404BBF;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
 
@@ -155,9 +155,7 @@ span {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/2-page/backround/people-office.jpg');
     background-size: 1440px 600px;
     background-repeat: no-repeat;
-    background-position: center center; 
-    
-    
+    background-position: center center;    
 }
 .hero-container {
     display: flex;
@@ -318,6 +316,13 @@ span {
     border-radius: 50%;
     background: #4D5AE5;
 }
+.social-list-icon {
+    fill: #F4F4FD;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+    background: #404BBF;
+}
 
 /* <<<<< /Команда >>>>> */
 
@@ -350,6 +355,19 @@ span {
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
+.customers-list-icon {
+    fill: #8e8f99;
+}
+.customers-list-link:hover .customers-list-icon,
+.customers-list-link:focus .customers-list-icon {
+       fill: #404BBF;
+}
+.customers-list-item:hover,
+.customers-list-item:focus {
+    border: 1px solid #404BBF;
+    border-radius: 4px;
+}   
+
 
 /* <<<<< /Клієнти >>>>> */
 
@@ -360,14 +378,9 @@ span {
     padding-bottom: 100px;
     background-color: #2E2F42;   
 }
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    
-    
-}
+
 .footer-logotype {
-    display: flex;  
+    
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
@@ -380,7 +393,6 @@ span {
     color: #F4F4FD;}
     
 .footer-text {
-    display: flex;
     margin-top: 16px;
     width: 264px;
     color: #E7E9FC;
@@ -413,12 +425,19 @@ span {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 }
+.footer-social-list-icon {
+    fill: #F4F4FD;
+}
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background-color: #404BBF;
+}
+
 .fotter-social-list-item {
     margin-left: 120px;
     
     
 }
-
 
 /* <<<<< /Футер >>>>> */
 
@@ -445,12 +464,17 @@ span {
     line-height: 1.5;
     letter-spacing: 0.04em;
 }
+.card-link:hover,
+.card-link:focus {
+
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .btn-filters {
     display: flex;
     padding: 12px 24px;
     background: #F4F4FD;
-    border: 1px solid #E7E9FC;
+    border: 0 solid #E7E9FC;
     border-radius: 4px;
     font-size: 16px;
     line-height: 24px;
@@ -463,6 +487,7 @@ span {
 .btn-filters:focus {
     background-color: #4D5AE5;
     color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* <<<<< /Кнопки >>>>> */
 
